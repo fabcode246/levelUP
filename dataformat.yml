@@ -1,0 +1,35 @@
+user:
+  usertag text # user tag eg: Sairam#1724
+  userid integer # user id
+  level integer # level of the user
+  exp integer # exp of the user
+  guildid integer # guild id of the user
+  theme text #theme of user
+  cd integer # cooldown bool  0 = False, 1 = True
+
+role:
+  rolename text #name of the role
+  roleid integer #role id
+  guildid integer #guild id of the role
+  level integer #level required to get the role
+
+guild:
+  guildid integer #guild id of the guild
+  lvlchid integer #id of the channel to which level message should be send to
+  theme text #guild theme
+  dm integer #indicates whether to dm the user level message 0 = False 1 = True
+
+channel:
+  channelid integer #channel id of the ignored channel
+  guildid integer #guild id of the ignored channel
+
+theme:
+  name text # name of the theme
+  bg text #background color
+  tc text #text color
+  pc text #progress color
+  bc text #border color
+
+admin:
+  userid integer #user id of the admin
+  data integer #access to data base 0 = False 1 = True
